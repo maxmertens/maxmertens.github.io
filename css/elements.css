@@ -70,8 +70,10 @@ p {
 }
 
 .box_4 {
-    /*background: linear-gradient(#b9ebff, #b3fcff);*/
-    background-color: antiquewhite;
+    background-image: url("../img/04_supply/mood_supply.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .box_5 {
