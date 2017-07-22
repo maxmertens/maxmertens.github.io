@@ -1,0 +1,86 @@
+.m-scene {
+    position: relative;
+}
+.m-scene .scene-main {
+    -webkit-animation-duration: .35s;
+    animation-duration: .35s;
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.m-scene .scene-main--projectin {
+    -webkit-animation-name: projectIn;
+    animation-name: projectIn;
+}
+.m-scene .scene-main--projectout {
+    -webkit-animation-name: projectOut;
+    animation-name: projectOut;
+}
+.m-scene .scene-main--whitein {
+    -webkit-animation-name: whiteIn;
+    animation-name: whiteIn;
+}
+.m-scene .scene-main--whiteout {
+    -webkit-animation-name: whiteOut;
+    animation-name: whiteOut;
+}
+.m-scene.is-exiting .scene-main {
+    -webkit-animation-direction: alternate-reverse;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes projectIn {
+    0% {
+        width: calc(100vw - 0px);
+        height: calc(100vh - 0px);
+        margin: 0 auto;
+        border: 20px solid white;
+        box-sizing: border-box;
+    }
+    100% {
+        width: 100vw;
+        height: 400px;
+        margin: 0 auto;
+        border: 20px solid white;
+        box-sizing: border-box;
+
+    }
+}
+
+@keyframes projectOut {
+    0% {
+        width: 100vw;
+        height: 400px;
+        margin: 0 auto;
+        border: 20px solid white;
+        box-sizing: border-box;
+
+    }
+    100% {
+        width: calc(100vw - 0px);
+        height: calc(100vh - 0px);
+        margin: 0 auto;
+        border: 20px solid white;
+        box-sizing: border-box;
+
+    }
+}
+
+/*@keyframes whiteIn {*/
+    /*0% {*/
+        /*top: -50px;*/
+    /*}*/
+    /*100% {*/
+        /*top: 0;*/
+    /*}*/
+/*}*/
+
+/*@keyframes whiteOut {*/
+    /*0% {*/
+        /*top: 0;*/
+    /*}*/
+    /*100% {*/
+        /*top: -50px;*/
+    /*}*/
+/*}*/

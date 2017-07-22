@@ -1,0 +1,50 @@
+.pagination {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translate(0%, -50%);
+
+    font-size: 13px;
+    font-family: "Roboto Mono";
+    font-weight: 100;
+    z-index: 10;
+}
+.pagination a {
+    display:block;
+    width: 120px;
+    height: 30px;
+    border-radius:50%;
+
+    color: #aaa;
+    position:relative;
+    padding:4px;
+}
+.pagination a.active:after {
+    transform: scale(1.02);
+    background-color: black;
+}
+.pagination a .hover-text {
+    position:absolute;
+    right: 20px;
+    top: 11px;
+    opacity:0;
+    transition: var(--ease);
+}
+.pagination a:hover .hover-text {
+    opacity: 1;
+}
+.pagination a:after {
+    width:4px;
+    height:4px;
+
+    display: block;
+    background: #aaaaaa;
+    border-radius:50%;
+    content:'';
+    position: absolute;
+    margin:auto;
+    top:0;
+    right:4px;
+    bottom:0;
+
+}
