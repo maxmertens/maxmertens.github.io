@@ -77,13 +77,17 @@ p {
 }
 
 .box_5 {
-    /*background: linear-gradient(#b9ebff, #b3fcff);*/
-    background-color: darkgreen;
+    background-image: url("../img/05_storage/mood_storage.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .box_6 {
-    /*background: linear-gradient(#b9ebff, #b3fcff);*/
-    background-color: darkorange;
+    background-image: url("../img/06_delivery/mood_delivery.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 
