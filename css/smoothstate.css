@@ -17,14 +17,52 @@
     -webkit-animation-name: projectOut;
     animation-name: projectOut;
 }
-.m-scene .scene-main--whitein {
-    -webkit-animation-name: whiteIn;
-    animation-name: whiteIn;
+
+.m-scene .scene-main--box1in {
+    -webkit-animation-name: box1in;
+    animation-name: box1in;
 }
-.m-scene .scene-main--whiteout {
-    -webkit-animation-name: whiteOut;
-    animation-name: whiteOut;
+.m-scene .scene-main--box1out {
+    -webkit-animation-name: box1out;
+    animation-name: box1out;
 }
+
+.m-scene .scene-main--box2in {
+    -webkit-animation-name: box2in;
+    animation-name: box2in;
+}
+.m-scene .scene-main--box2out {
+    -webkit-animation-name: box2out;
+    animation-name: box2out;
+}
+
+.m-scene .scene-main--box3in {
+    -webkit-animation-name: box3in;
+    animation-name: box3in;
+}
+.m-scene .scene-main--box3out {
+    -webkit-animation-name: box3out;
+    animation-name: box3out;
+}
+
+.m-scene .scene-main--box4in {
+    -webkit-animation-name: box4in;
+    animation-name: box4in;
+}
+.m-scene .scene-main--box4out {
+    -webkit-animation-name: box4out;
+    animation-name: box4out;
+}
+
+.m-scene .scene-main--box5in {
+    -webkit-animation-name: box5in;
+    animation-name: box5in;
+}
+.m-scene .scene-main--box5out {
+    -webkit-animation-name: box5out;
+    animation-name: box5out;
+}
+
 .m-scene.is-exiting .scene-main {
     -webkit-animation-direction: alternate-reverse;
     animation-direction: alternate-reverse;
@@ -47,7 +85,6 @@
 
     }
 }
-
 @keyframes projectOut {
     0% {
         width: 100vw;
@@ -67,20 +104,148 @@
     }
 }
 
-/*@keyframes whiteIn {*/
-    /*0% {*/
-        /*top: -50px;*/
-    /*}*/
-    /*100% {*/
-        /*top: 0;*/
-    /*}*/
-/*}*/
+@keyframes box1in {
+    0% {
+        position: relative;
+        left: 50px;
+        top: 5vh;
+        width: 70vw;
+        height: 70vh;
+    }
+    100% {
+        width: 100vw;
+        height: 400px;
+        margin: 0 auto;
+    }
+}
+@keyframes box1out {
+    0% {
+        width: 100vw;
+        height: 400px;
+        margin: 0 auto;
+    }
+    100% {
+        position: relative;
+        left: 50px;
+        top: 5vh;
+        width: 70vw;
+        height: 70vh;
+    }
+}
 
-/*@keyframes whiteOut {*/
-    /*0% {*/
-        /*top: 0;*/
-    /*}*/
-    /*100% {*/
-        /*top: -50px;*/
-    /*}*/
-/*}*/
+@keyframes box2in {
+    0% {
+        position: absolute;
+        right: 50px;
+        top: 85vh;
+        width: 70vw;
+        height: 70vh;
+    }
+    100% {
+        width: 100vw;
+        height: 400px;
+        margin: 0 auto;
+    }
+}
+@keyframes box2out {
+    0% {
+        width: 100vw;
+        height: 400px;
+        margin: 0 auto;
+    }
+    100% {
+        position: absolute;
+        right: 50px;
+        top: 85vh;
+        width: 70vw;
+        height: 70vh;
+    }
+}
+
+@keyframes box3in {
+    0% {
+        position: absolute;
+        left: 100px;
+        top: 165vh;
+        width: 50vw;
+        height: 60vh;
+    }
+    100% {
+        width: 100vw;
+        height: 400px;
+        margin: 0 auto;
+    }
+}
+@keyframes box3out {
+    0% {
+        width: 100vw;
+        height: 400px;
+        margin: 0 auto;
+    }
+    100% {
+        position: absolute;
+        left: 100px;
+        top: 165vh;
+        width: 50vw;
+        height: 60vh;
+    }
+}
+
+@keyframes box4in {
+    0% {
+        position: absolute;
+        right: 200px;
+        top: 235vh;
+        width: 50vw;
+        height: 75vh;
+    }
+    100% {
+        width: 100vw;
+        height: 400px;
+        margin: 0 auto;
+    }
+}
+@keyframes box4out {
+    0% {
+        width: 100vw;
+        height: 400px;
+        margin: 0 auto;
+    }
+    100% {
+        position: absolute;
+        right: 200px;
+        top: 235vh;
+        width: 50vw;
+        height: 75vh;
+    }
+}
+
+@keyframes box5in {
+    0% {
+        position: absolute;
+        right: 200px;
+        top: 320vh;
+        width: 50vw;
+        height: 50vh;
+    }
+    100% {
+        width: 100vw;
+        height: 400px;
+        margin: 0 auto;
+    }
+}
+@keyframes box5out {
+    0% {
+        width: 100vw;
+        height: 400px;
+        margin: 0 auto;
+    }
+    100% {
+        position: absolute;
+        top: 320vh;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        width: 90vw;
+        height: 50vh;
+    }
+}
