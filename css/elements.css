@@ -17,6 +17,9 @@ body {
     /*background: linear-gradient(#ff7c60, #ffbb59);*/
     box-sizing: border-box;
     color: black;
+
+    transition: background-color ease-in-out 0.3s;
+    background-color: #222222;
 }
 p {
     font-family: Roboto;
@@ -30,6 +33,10 @@ p {
 
 a:link {
     text-decoration: none;
+}
+
+.landing {
+    background-color: white;
 }
 
 
@@ -137,7 +144,7 @@ a:link {
     position: absolute !important;
     top: 420vh;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0%) !important;
     width: 90vw;
     height: 50vh;
 }
@@ -199,7 +206,7 @@ a:link {
 }
 
 .starttext {
-    color: #28292a;
+    color: white;
     font-family: "HK Grotesk";
     font-size: 60px;
     font-weight: 500;
@@ -411,6 +418,15 @@ a:link {
 .supply_schema {
     height: 70vh;
     background-image: url("../img/04_supply/supply.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/*06 DELIVERY--------------------------------------------------------*/
+.delivery_diagramm {
+    height: 25vh;
+    background-image: url("../img/06_delivery/diagramm.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
