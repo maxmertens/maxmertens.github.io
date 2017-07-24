@@ -390,7 +390,7 @@ a:link {
 }
 
 
-/*02 LIVING SPACE----------------------------------------------------*/
+/*02 LIVING SPACE---------------------------------------------------*/
 .living_space_overview {
     height: 65vh;
     background-image: url("../img/02_livingspace/livingspace.png");
@@ -399,7 +399,7 @@ a:link {
     background-repeat: no-repeat;
 }
 
-/*03 INTERFACE----------------------------------------------------*/
+/*03 INTERFACE------------------------------------------------------*/
 .interface_schema {
     height: 65vh;
     background-image: url("../img/03_interface/interface_schema.png");
@@ -407,6 +407,16 @@ a:link {
     background-size: contain;
     background-repeat: no-repeat;
 }
+/*04 SUPPLY--------------------------------------------------------*/
+.supply_schema {
+    height: 70vh;
+    background-image: url("../img/04_supply/supply.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
 
 /* Underline From Left --------------------------------------------*/
 .hvr-underline-from-left {
