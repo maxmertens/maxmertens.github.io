@@ -4,7 +4,16 @@
     color: var(--akzent);
     font-family: var(--headline);
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 20px;
 }
 
+p {
+    font-family: Roboto;
+    color: #333;
+    font-size: 19px;
+    font-weight: 300;
+    letter-spacing: 0.04rem;
+    line-height: 34px;
+    margin-bottom: 20px;
+}

@@ -21,15 +21,7 @@ body {
     transition: background-color ease-in-out 0.3s;
     background-color: white;
 }
-p {
-    font-family: Roboto;
-    color: #333;
-    font-size: 19px;
-    font-weight: 300;
-    letter-spacing: 0.04rem;
-    line-height: 34px;
-    margin-bottom: 20px;
-}
+
 
 a:link {
     text-decoration: none;
@@ -385,8 +377,8 @@ a:link {
 
 
 .building_overview {
-    height: 55vh;
-    background-image: url("../img/01_building/building.png");
+    height: 70vh;
+    background-image: url("../img/01_building/mood_building_schema.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -424,6 +416,15 @@ a:link {
     background-repeat: no-repeat;
 }
 
+/*05 STORAGE--------------------------------------------------------*/
+.storage_system {
+    height: 45vh;
+    background-image: url("../img/05_storage/storage_system.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 /*06 DELIVERY--------------------------------------------------------*/
 .delivery_diagramm {
     height: 25vh;
@@ -450,7 +451,7 @@ span {
     animation: 2s ease 0s normal none infinite running bounce;
     bottom: 17px;
     height: 44px;
-    left: 50%;
+    left: calc(50% - 30px);
     position: absolute;
     width: 60px;
 }
