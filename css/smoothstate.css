@@ -63,6 +63,15 @@
     animation-name: box5out;
 }
 
+.m-scene .scene-main--box6in {
+    -webkit-animation-name: box6in;
+    animation-name: box6in;
+}
+.m-scene .scene-main--box6out {
+    -webkit-animation-name: box6out;
+    animation-name: box6out;
+}
+
 .m-scene.is-exiting .scene-main {
     -webkit-animation-direction: alternate-reverse;
     animation-direction: alternate-reverse;
@@ -106,9 +115,9 @@
 
 @keyframes box1in {
     0% {
-        position: relative;
+        position: absolute;
         left: 50px;
-        top: 5vh;
+        top: 105vh;
         width: 70vw;
         height: 70vh;
     }
@@ -125,9 +134,9 @@
         margin: 0 auto;
     }
     100% {
-        position: relative;
+        position: absolute;
         left: 50px;
-        top: 5vh;
+        top: 105vh;
         width: 70vw;
         height: 70vh;
     }
@@ -137,7 +146,7 @@
     0% {
         position: absolute;
         right: 50px;
-        top: 85vh;
+        top: 185vh;
         width: 70vw;
         height: 70vh;
     }
@@ -156,7 +165,7 @@
     100% {
         position: absolute;
         right: 50px;
-        top: 85vh;
+        top: 185vh;
         width: 70vw;
         height: 70vh;
     }
@@ -166,7 +175,7 @@
     0% {
         position: absolute;
         left: 100px;
-        top: 165vh;
+        top: 265vh;
         width: 50vw;
         height: 60vh;
     }
@@ -185,7 +194,7 @@
     100% {
         position: absolute;
         left: 100px;
-        top: 165vh;
+        top: 265vh;
         width: 50vw;
         height: 60vh;
     }
@@ -195,7 +204,7 @@
     0% {
         position: absolute;
         right: 200px;
-        top: 235vh;
+        top: 335vh;
         width: 50vw;
         height: 75vh;
     }
@@ -214,7 +223,7 @@
     100% {
         position: absolute;
         right: 200px;
-        top: 235vh;
+        top: 335vh;
         width: 50vw;
         height: 75vh;
     }
@@ -224,7 +233,7 @@
     0% {
         position: absolute;
         right: 200px;
-        top: 320vh;
+        top: 420vh;
         width: 50vw;
         height: 50vh;
     }
@@ -242,10 +251,39 @@
     }
     100% {
         position: absolute;
-        top: 320vh;
+        top: 420vh;
         left: 50%;
         transform: translate(-50%, 0%);
         width: 90vw;
         height: 50vh;
+    }
+}
+
+@keyframes box6in {
+    0% {
+        position: absolute;
+        top: 480vh;
+        left: 150px;
+        width: 60vw;
+        height: 60vh;
+    }
+    100% {
+        width: 100vw;
+        height: 400px;
+        margin: 0 auto;
+    }
+}
+@keyframes box6out {
+    0% {
+        width: 100vw;
+        height: 400px;
+        margin: 0 auto;
+    }
+    100% {
+        position: absolute;
+        top: 480vh;
+        left: 150px;
+        width: 60vw;
+        height: 60vh;
     }
 }

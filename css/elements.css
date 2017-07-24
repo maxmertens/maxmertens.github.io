@@ -98,6 +98,9 @@ a:link {
 
 /*---------------------------------------------------------------*/
 
+
+
+
 #logo {
     position: fixed;
     top: 50px;
@@ -108,26 +111,42 @@ a:link {
     color: #50E3C2;
 }
 
-.white {
-    background-color: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 50px;
-    width: 100vw;
-    z-index: 100;
+.verbindung {
+    background-image: url("../img/verbindung.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    position: absolute;
+    left: 50%;
+    top: 105vh;
+    transform: translate(-50%, 0%);
+
+    height: 440vh;
+    width: 80vw;
 }
 
-.panel {
-    position: relative;
-    /*padding-top: 25px;*/
+
+.starttext_container {
+    position: absolute;
+    display: flex;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 0%);
+    width: 70%;
+    height: 100vh;
 }
-.panel_height {
-    height: calc(100vh - 0px);
+
+.starttext {
+    color: #28292a;
+    font-family: "HK Grotesk";
+    font-size: 60px;
+    font-weight: 500;
+    align-self: center;
+    text-align: center;
+    margin-top: -50px;
 }
-.panel_height_0 {
-    height: calc(0vh - 0px);
-}
+
 
 
 .box {
@@ -141,7 +160,7 @@ a:link {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 30%;
+    width: 40%;
 
     color: white;
     opacity: 1;
@@ -150,14 +169,14 @@ a:link {
 }
 
 .box_info_number {
-    margin-right: 22px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
 
-
-    color: cornflowerblue;
+    color: var(--akzent);
     font-family: var(--headline);
     font-size: 20px;
     font-weight: 400;
-    float: left;
 }
 
 .box_info_head {
@@ -293,4 +312,35 @@ a:link {
     background-image: url("../img/01_building/sharing.png");
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+
+/* Underline From Left --------------------------------------------*/
+.hvr-underline-from-left {
+    vertical-align: -0.6vw;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    position: relative;
+    overflow: hidden;
+}
+.hvr-underline-from-left:before {
+    content: "";
+    position: absolute;
+    z-index: 200;
+    /*display: none;*/
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: var(--akzent);
+    height: 5px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+    right: 0;
 }

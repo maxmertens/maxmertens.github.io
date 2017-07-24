@@ -1,10 +1,16 @@
 
 
-$( document ).ready(function() {
-    $(".pagination a").on("click",function() {
-        console.log("ok");
 
-        $.scrollify.move($(this).attr("href"));
+$(document).ready(function() {
+    
+    $(".box_1_back").on("click", function( e ) {
+
+        // e.preventDefault();
+
+        $("body, html").animate({
+            scrollTop: 400
+        }, 600);
+
     });
 });
 
@@ -154,9 +160,14 @@ var count = 1;
 
 
 
+
+
 // AJAX Smoothstate.js --------------------------------------------------------------------------
 $(function() {
-    $('#main').smoothState();
+    $('#main').smoothState({
+        anchors: 'one',
+        hrefRegex: 'one'
+    });
 });
 
 $(function(){
