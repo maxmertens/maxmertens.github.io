@@ -399,6 +399,15 @@ a:link {
     background-repeat: no-repeat;
 }
 
+/*03 INTERFACE----------------------------------------------------*/
+.interface_schema {
+    height: 65vh;
+    background-image: url("../img/03_interface/interface_schema.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 /* Underline From Left --------------------------------------------*/
 .hvr-underline-from-left {
     vertical-align: -0.6vw;
