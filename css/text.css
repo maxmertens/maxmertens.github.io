@@ -1,2 +1,10 @@
 
 
+.headline {
+    color: var(--akzent);
+    font-family: var(--headline);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
