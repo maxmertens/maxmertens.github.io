@@ -6,11 +6,12 @@ $(document).ready(function() {
         var stickyOffset = $('.sticky-anchor').offset().top;
 
 
-        if (scrollTop > stickyOffset - 35) {
-            $(' body').addClass('landing');
-
-        } else {
+        if (scrollTop > stickyOffset - 60) {
             $(' body').removeClass('landing');
+            $('.bouncing').css('opacity', '0');
+        } else {
+            $(' body').addClass('landing');
+            $('.bouncing').css('opacity', '1');
         }
     });
 
