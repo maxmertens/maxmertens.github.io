@@ -2,14 +2,16 @@
 
 
 $(document).ready(function() {
-    
+
     $(".box_1_back").on("click", function( e ) {
 
         // e.preventDefault();
 
         $("body, html").animate({
-            scrollTop: 400
-        }, 600);
+            scrollTop: 700
+        }, 50);
+
+        console.log("back");
 
     });
 });
@@ -164,10 +166,7 @@ var count = 1;
 
 // AJAX Smoothstate.js --------------------------------------------------------------------------
 $(function() {
-    $('#main').smoothState({
-        anchors: 'one',
-        hrefRegex: 'one'
-    });
+    $('#main').smoothState();
 });
 
 $(function(){

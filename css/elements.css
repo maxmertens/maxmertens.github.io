@@ -37,7 +37,7 @@ a:link {
     position: relative;
     width: 70vw;
     max-width: 1400px;
-    margin: 100px auto 0;
+    margin: 0 auto;
 }
 
 .projectwidth60 {
@@ -49,7 +49,18 @@ a:link {
 .projectwidth50 {
     width: 50vw;
     max-width: 900px;
-    margin: 100px auto;
+    margin: 0 auto;
+}
+.subline {
+    width: 50vw;
+    max-width: 900px;
+    margin: 0 auto;
+
+    font-family: "Roboto Mono";
+    font-weight: 100;
+    font-size: 14px;
+    color: #222;
+    text-align: center;
 }
 
 
@@ -60,11 +71,31 @@ a:link {
     background-repeat: no-repeat;
     position: relative;
 }
+.box_1_start {
+    position: absolute !important;
+    left: 50px;
+    top: 105vh;
+    width: 70vw;
+    height: 70vh;
+}
+.box_1_detail {
+    width: 100vw;
+    height: 60vh;
+    margin: 0 auto;
+}
+
 .box_2 {
     background-image: url("../img/02_livingspace/mood_livingspace.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+.box_2_start {
+    position: absolute !important;
+    right: 50px;
+    top: 185vh;
+    width: 70vw;
+    height: 70vh;
 }
 
 .box_3 {
@@ -73,12 +104,26 @@ a:link {
     background-size: cover;
     background-repeat: no-repeat;
 }
+.box_3_start {
+    position: absolute !important;
+    left: 100px;
+    top: 265vh;
+    width: 50vw;
+    height: 60vh;
+}
 
 .box_4 {
     background-image: url("../img/04_supply/mood_supply.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+.box_4_start {
+    position: absolute !important;
+    right: 200px;
+    top: 335vh;
+    width: 50vw;
+    height: 75vh;
 }
 
 .box_5 {
@@ -87,12 +132,27 @@ a:link {
     background-size: cover;
     background-repeat: no-repeat;
 }
+.box_5_start {
+    position: absolute !important;
+    top: 420vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90vw;
+    height: 50vh;
+}
 
 .box_6 {
     background-image: url("../img/06_delivery/mood_delivery.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+.box_6_start {
+    position: absolute !important;
+    top: 480vh;
+    left: 150px;
+    width: 60vw;
+    height: 60vh;
 }
 
 
@@ -197,6 +257,20 @@ a:link {
     font-weight: 200;
 }
 
+/*----------------Detailsite--------------------------------------------------------*/
+
+
+.back {
+    position: absolute;
+    top: calc(60vh + 86px);
+    left: 50px;
+
+    font-family: var(--copy);
+    color: black;
+
+}
+
+
 
 /*----------------Building--------------------------------------------------------*/
 
@@ -298,13 +372,13 @@ a:link {
 }
 
 
-/*01 BUILDING------------------------------*/
+/*01 BUILDING----------------------------------------------------*/
 
 
 .building_overview {
-    height: 65vh;
-    background-image: url("../img/01_building/building_overview.svg");
-    background-size: contain;
+    height: 55vh;
+    background-image: url("../img/01_building/building.png");
+    background-size: cover;
     background-repeat: no-repeat;
 }
 .sharing {
@@ -314,6 +388,15 @@ a:link {
     background-repeat: no-repeat;
 }
 
+
+/*02 LIVING SPACE----------------------------------------------------*/
+.living_space_overview {
+    height: 65vh;
+    background-image: url("../img/02_livingspace/livingspace.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 
 /* Underline From Left --------------------------------------------*/
 .hvr-underline-from-left {
